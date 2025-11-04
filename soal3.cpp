@@ -58,3 +58,31 @@ int main() {
 
     return 0;
 }
+
+/*
+PENJELASAN KODE PROGRAM
+
+
+Program ini mensimulasikan penyebaran virus dalam jaringan sosial menggunakan algoritma Breadth-First Search (BFS). Setiap node mewakili satu orang, dan edge mewakili hubungan pertemanan antar orang.
+
+🔹 Input:
+- Jumlah vertex (V) dan edge (E)
+- Daftar pasangan pertemanan (graf tak berarah)
+- Node awal yang terinfeksi (S) dan hari ke-K yang ingin dianalisis
+
+🔹 Proses:
+- Program membangun graf menggunakan adjacency list
+- BFS dimulai dari node awal (S) dengan hari ke-0
+- Setiap node yang terinfeksi akan menularkan virus ke semua tetangganya di hari berikutnya
+- Node yang baru terinfeksi tepat di hari ke-K akan disimpan dalam hasil
+
+🔹 Output:
+- Jika ada node yang terinfeksi di hari ke-K, program mencetak ID mereka dalam urutan menaik
+- Jika tidak ada, program mencetak "(TIDAK ADA)"
+
+🔹 Tujuan:
+- Mengetahui siapa saja yang baru terinfeksi tepat pada hari ke-K
+- Menunjukkan pemahaman tentang BFS dan struktur data graf
+
+*/
+
