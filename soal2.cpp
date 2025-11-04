@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 #include <queue>
 
 using namespace std;
@@ -8,11 +7,20 @@ int main() {
     queue<string> antrianNormal;
     queue<string> antrianDarurat;
 
+    cout << "--- Sistem Antrian ---" << endl;
+    cout << "Format Perintah:" << endl;
+    cout << "  DATANG [nama]" << endl;
+    cout << "  DARURAT [nama]" << endl;
+    cout << "  LAYANI" << endl;
+    cout << "----------------------" << endl;
+
     int n;
+    cout << "Masukkan jumlah total perintah (N): ";
     cin >> n;
 
     string cmd, nama;
     for (int i = 0; i < n; ++i) {
+        cout << "Perintah ke-" << (i + 1) << ": ";
         cin >> cmd;
 
         if (cmd == "DATANG") {
@@ -33,6 +41,7 @@ int main() {
     }
     return 0;
 }
+
 
 
 //Penjelasan :
