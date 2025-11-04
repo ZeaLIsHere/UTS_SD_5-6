@@ -1,3 +1,4 @@
+#include <iostream>
 #include <vector>
 #include <queue>
 #include <algorithm>
@@ -30,7 +31,8 @@ int main() {
     vector<int> hasil;
 
     while (!q.empty()) {
-        auto [node, hari] = q.front();
+        int node = q.front().first;
+        int hari = q.front().second;
         q.pop();
 
         if (hari == K) {
@@ -85,4 +87,3 @@ Program ini mensimulasikan penyebaran virus dalam jaringan sosial menggunakan al
 - Menunjukkan pemahaman tentang BFS dan struktur data graf
 
 */
-
