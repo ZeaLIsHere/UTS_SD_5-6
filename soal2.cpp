@@ -41,9 +41,9 @@ int main() {
  //    * Looping sebanyak n kali untuk membaca setiap perintah.
 
  // Logika Perintah:
- //    DATANG [Nama]: Jika perintah adalah "DATANG", baca nama pasien, lalu masukkan (push) nama tersebut ke belakang `antrianNormal`.
- //    DARURAT [Nama]: Jika perintah adalah "DARURAT", baca nama pasien, lalu masukkan (push) nama tersebut ke belakang `antrianDarurat`.
+ //    DATANG [Nama]: Jika perintah adalah "DATANG", baca nama pasien, lalu masukkan (push) nama tersebut ke belakang 'antrianNormal'.
+ //    DARURAT [Nama]: Jika perintah adalah "DARURAT", baca nama pasien, lalu masukkan (push) nama tersebut ke belakang 'antrianDarurat'.
  //    LAYANI: Jika perintah adalah "LAYANI":
- //        - Cek terlebih dahulu `antrianDarurat`. Jika `!antrianDarurat.empty()` (tidak kosong), layani pasien darurat. Cetak nama pasien terdepan (`antrianDarurat.front()`) lalu keluarkan (pop) dari antrian darurat.
- //        - Jika `antrianDarurat` kosong, baru cek `antrianNormal`. Jika `!antrianNormal.empty()` (tidak kosong), layani pasien normal. Cetak nama pasien terdepan (`antrianNormal.front()`) lalu keluarkan (pop) dari antrian normal.
+ //        - Cek terlebih dahulu 'antrianDarurat'. Jika antrianDarurat tidak kosong, layani pasien darurat. Cetak nama pasien terdepan lalu keluarkan dari antrian darurat.
+ //        - Jika 'antrianDarurat' kosong, baru cek 'antrianNormal'. Jika 'antrianNormal' tidak kosong, layani pasien normal. Cetak nama pasien terdepan lalu keluarkan dari antrian normal.
  //        - Jika kedua antrian kosong, "LAYANI" tidak melakukan apa-apa.
